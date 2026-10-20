@@ -1,0 +1,42 @@
+/* p{
+    color:blue;
+}
+.highlight{
+    color:red;
+    background-color:yellow;
+}
+#special{
+    color:green;
+} */
+
+
+/* ul >li{
+ color:blue;
+}
+
+li+li{
+    border-top: 1px solid black;
+}
+
+.note ~ p{
+    color:red
+} */
+
+.highlight.second{
+    color:red;
+}
+
+div.secure{
+    color:white;
+    background-color:green;
+}
+
+span.secure{
+    color:white;
+    background-color:blue;
+}
+
+.first.secure .inner{
+    background-color:yellow;
+    color: black
+}
