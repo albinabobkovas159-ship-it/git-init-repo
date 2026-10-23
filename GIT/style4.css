@@ -1,0 +1,9 @@
+input {
+    color: green;
+    outline: solid gray 1px;
+    border-radius: 3px;
+    height: 20px;
+}
+input::placeholder{
+   color: green;
+}
