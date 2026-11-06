@@ -7,21 +7,21 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
-.main{
+.page{
   max-width: 1200px;
 }
-h2{
-  color: #667eea;
+.page__title{
+  color: lightsalmon;
   margin-bottom: 20px;
   margin:20px;
 }
-.grid-box{
+.responsive__grid{
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   margin: 20px;
 }
-.item{
+.responsive__item{
   text-align: center;
   background: #667eea;
   color:white;
@@ -29,18 +29,21 @@ h2{
   border-radius: 10px;
   font-weight: bold;
 }
+.responsive__item--current{
+  background: #764ba2;
+}
 @media (max-width: 600px){
-  .grid-box{
+  .responsive__grid{
     grid-template-columns: 1fr;
   }
 }
 @media (min-width: 601px) and (max-width: 800px){
-  .grid-box{
+  .responsive__grid{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 801px) and (max-width: 1000px){
-  .grid-box{
+  .responsive__grid{
     grid-template-columns: repeat(3, 1fr);
   }
 }
