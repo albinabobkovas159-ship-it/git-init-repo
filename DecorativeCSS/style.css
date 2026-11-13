@@ -31,10 +31,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .example-box {
-  background-color: #667eea;
+  background: linear-gradient(45deg, #7873f5, #6ee357);
   color: #fff;
   padding: 40px 60px;
   border-radius: 10px;
@@ -70,20 +71,87 @@ body {
     0 0 20px rgba(105, 88, 0, 0.8);
 }
 
-.border-radius{
+.border-radius {
   border-radius: 25px 50px 25px 6cqb;
 }
 
-.border-image{
+.border-image {
   border: 10px solid;
   border-image: linear-gradient(45deg, #ff6ec4, #7873f5) 30;
 }
 
-.outline-effect{
+.outline-effect {
   outline: 10px solid #6ee357;
   outline-offset: 10px;
 }
 
-.blur-filter{
+.blur-filter {
   filter: blur(1px);
+}
+
+.translate {
+  transform: translate(10px, 20px);
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.scale {
+  transform: scale(1.2);
+}
+
+.skew {
+  transform: skew(10deg, 10deg);
+}
+
+.translate-rotate {
+  transform: translate(100px, 20px) rotate(45deg);
+}
+
+.scale-rotate {
+  transform: scale(1.2) rotate(180deg);
+}
+
+.rotate-x:hover{
+  transition: transform 1s ease-in;
+  transform: rotateX(150deg);
+}
+
+.rotate-y {
+  transform: rotateY(150deg);
+}
+
+.perspective-basic {
+  transform: perspective(200px) rotateX(45deg);
+}
+
+.point-center {
+  transform-origin: center;
+  transform: rotate(45deg);
+}
+
+.point-left {
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+
+.point-right {
+  transform-origin: right;
+  transform: rotate(45deg);
+}
+
+.hover-scale:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.hover-rotate:hover{
+  transition: transform 1s ease-in;
+  transform: rotate(180deg);
+}
+
+.hover-3d:hover{
+  transition: transform 1s ease-out;
+  transform: perspective(100px) rotateX(50deg); 
 }
